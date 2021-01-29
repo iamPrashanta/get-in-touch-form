@@ -1,0 +1,271 @@
+$shadow-color:#f5f5f5;
+$media-small-width: 280px;
+$submit-btn-color: rgb(128, 110, 214);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+::placeholder{
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: gray;;
+}
+.container{
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.svg{
+    margin-top: 100px;
+    height: 380px;
+    width: 320px;
+    // border: 1px solid red;
+}
+form{
+    // border: 1px solid red;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -40px;
+    display: flex;
+    flex-direction: column;
+    outline: none;
+    h2{
+        font-weight: bolder;
+        font-size: 17px;
+    }
+    input[type="text"]{
+        width: $media-small-width;
+        height: 40px;
+        border-radius: 18px;
+        border: none;
+        background-color: $shadow-color;
+        margin-bottom: 10px;
+        font-size: 12px;
+        font-family: 'poppins', sans-serif;
+        font-weight: 500;
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+        box-sizing: border-box; 
+        outline: none;
+        padding-left:20px;
+    }
+    textarea{
+        width: $media-small-width;
+        background-color: $shadow-color;
+        border-radius: 15px;
+        border: none;
+        font-size: 12px;
+        font-family: 'poppins', sans-serif;
+        font-weight: 500;
+        margin-bottom: 20px;
+        resize: none;
+        outline: none;
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+    button{
+        width: $media-small-width;
+        background-color: $submit-btn-color;
+        border-radius: 15px;
+        border: none;
+        font-size: 14px;
+        font-family: 'poppins', sans-serif;
+        font-weight: 500;
+        height: 36px;
+        color: white;
+        outline: none;
+        &:hover{
+            animation: hoverAnim .5s;
+            animation-timing-function: cubic-bezier(0,.69,.32,.18);
+            animation-direction: normal;
+        }
+    }
+}
+
+@keyframes hoverAnim{0%{display:none}25%{display:block;background-color:rgb(90,71,182)}35%{background-color:rgb(151,142,194)}36%{background-color:rgb(255,0,179)}38%{background-color:yellow}40%{background-color:rgb(66,44,173);font-size:14px}50%{background-color: $submit-btn-color;font-size:14.5px;letter-spacing:0.5px}80%{background-color: $submit-btn-color;font-size:14px}100%{background-color:$shadow-color}}
+
+@media only screen and (max-width:930px){
+
+    ::placeholder{
+        font-family: 'poppins', sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        color: gray;;
+    }
+    .container{
+        // border: 1px solid red;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .svg{
+        margin-top: 100px;
+        height: 380px;
+        width: 320px;
+        // border: 1px solid red;
+    }
+    form{
+        // border: 1px solid red;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: -40px;
+        display: flex;
+        flex-direction: column;
+        outline: none;
+        h2{
+            font-weight: bolder;
+            font-size: 17px;
+        }
+        input[type="text"]{
+            width: $media-small-width;
+            height: 40px;
+            border-radius: 18px;
+            border: none;
+            background-color: $shadow-color;
+            margin-bottom: 10px;
+            font-size: 12px;
+            font-family: 'poppins', sans-serif;
+            font-weight: 500;
+            -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+            -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+            box-sizing: border-box; 
+            outline: none;
+            padding-left:20px;
+        }
+        textarea{
+            width: $media-small-width;
+            background-color: $shadow-color;
+            border-radius: 15px;
+            border: none;
+            font-size: 12px;
+            font-family: 'poppins', sans-serif;
+            font-weight: 500;
+            margin-bottom: 20px;
+            resize: none;
+            outline: none;
+            box-sizing: border-box;
+            padding-left: 20px;
+            padding-top: 10px;
+        }
+        button{
+            width: $media-small-width;
+            background-color: $submit-btn-color;
+            border-radius: 15px;
+            border: none;
+            font-size: 14px;
+            font-family: 'poppins', sans-serif;
+            font-weight: 500;
+            height: 36px;
+            color: white;
+            outline: none;
+            &:hover{
+                animation: hoverAnim .5s;
+                animation-timing-function: cubic-bezier(0,.69,.32,.18);
+                animation-direction: normal;
+            }
+        }
+    }
+}
+@media only screen and (max-width:670px){
+  
+::placeholder{
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: gray;;
+}
+.container{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.svg{
+    margin-top: 100px;
+    height: 380px;
+    width: 320px;
+    border: 1px solid red;
+}
+form{
+    border: 1px solid red;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -40px;
+    display: flex;
+    flex-direction: column;
+    outline: none;
+    h2{
+        font-weight: bolder;
+        font-size: 17px;
+    }
+    input[type="text"]{
+        width: $media-small-width;
+        height: 40px;
+        border-radius: 18px;
+        border: none;
+        background-color: $shadow-color;
+        margin-bottom: 10px;
+        font-size: 12px;
+        font-family: 'poppins', sans-serif;
+        font-weight: 500;
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+        box-sizing: border-box; 
+        outline: none;
+        padding-left:20px;
+    }
+    textarea{
+        width: $media-small-width;
+        background-color: $shadow-color;
+        border-radius: 15px;
+        border: none;
+        font-size: 12px;
+        font-family: 'poppins', sans-serif;
+        font-weight: 500;
+        margin-bottom: 20px;
+        resize: none;
+        outline: none;
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+    button{
+        width: $media-small-width;
+        background-color: $submit-btn-color;
+        border-radius: 15px;
+        border: none;
+        font-size: 14px;
+        font-family: 'poppins', sans-serif;
+        font-weight: 500;
+        height: 36px;
+        color: white;
+        outline: none;
+        &:hover{
+            animation: hoverAnim .5s;
+            animation-timing-function: cubic-bezier(0,.69,.32,.18);
+            animation-direction: normal;
+        }
+    }
+}
+}
